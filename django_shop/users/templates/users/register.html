@@ -2,14 +2,14 @@
 {% block content %}
 
 <div>
-  <form>
+  <form method="POST">
     {% csrf_token %}
     <fieldset>
       <legend>Join Today!</lengend>
-      {{ form }}
+      {{ form.as_p }}                                                                                     
     </fieldset>
     <div>
-      <button>Sign Up<button>
+      <button type="submit">Sign Up<button>
     </div>
   </form>
   <div>
